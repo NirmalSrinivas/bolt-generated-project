@@ -1,0 +1,18 @@
+{
+  "name": "job-tracking-app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start:backend": "cd apps/backend && npm run start:dev",
+    "start:frontend": "cd apps/frontend && npm run dev",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "devDependencies": {
+    "lerna": "^6.0.0"
+  }
+}
